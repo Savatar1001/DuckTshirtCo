@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duck T-Shirt Co</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cellipse cx='30' cy='42' rx='22' ry='14' fill='%23FFC629'/%3E%3Ccircle cx='40' cy='22' r='12' fill='%23FFC629'/%3E%3Cpath d='M50 18 L62 23 L50 28 Z' fill='%23FF8A1E'/%3E%3Cpath d='M22 54 L20 61 M34 54 L33 61' stroke='%23FF8A1E' stroke-width='3.5' stroke-linecap='round'/%3E%3Ccircle cx='43' cy='19' r='2.2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#/start" data-action="home">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="30" cy="42" rx="22" ry="14" fill="var(--brand-1)" stroke="#000" stroke-width="2.5"/><circle cx="40" cy="22" r="12" fill="var(--brand-1)" stroke="#000" stroke-width="2.5"/><path d="M50 18 L62 23 L50 28 Z" fill="#FF8A1E" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 42 Q22 52 34 44 Q26 36 14 42 Z" fill="#FFB400"/><path d="M22 54 L20 61 M34 54 L33 61" stroke="#FF8A1E" stroke-width="3.5" stroke-linecap="round"/><circle cx="43" cy="19" r="2.2" fill="#000"/></svg>
+      <span class="wordmark" role="img" aria-label="Duck T-Shirt Co"><span class="wm wm-u">U</span><span class="wm wm-c">C</span><span class="wm wm-k">K</span> T-Shirt Co</span>
+    </a>
+    <div class="header-right">
+      <span class="tag">Concept demo</span>
+      <a class="cart-link" href="#/basket" aria-label="Basket">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z M9 7a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <span id="cart-count" hidden>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="site-footer">
+    <a class="duck-hit" href="#/duck" title="Customise your duck" aria-label="Customise your duck"><svg class="logo small" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="30" cy="42" rx="22" ry="14" fill="var(--brand-1)" stroke="#000" stroke-width="2.5"/><circle cx="40" cy="22" r="12" fill="var(--brand-1)" stroke="#000" stroke-width="2.5"/><path d="M50 18 L62 23 L50 28 Z" fill="#FF8A1E" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 42 Q22 52 34 44 Q26 36 14 42 Z" fill="#FFB400"/><path d="M22 54 L20 61 M34 54 L33 61" stroke="#FF8A1E" stroke-width="3.5" stroke-linecap="round"/><circle cx="43" cy="19" r="2.2" fill="#000"/></svg></a>
+    <span>© Duck T-Shirt Co · Concept demo. No real orders or payments.</span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="printcheck.js"></script>
+  <script src="fx.js"></script>
+  <script src="app.js"></script>
+  <script>
+    /* dev only: index.html?tweak opens the design tweaker. Only on file:// or localhost, so it never runs on the live site. */
+    if (/[?&]tweak\b/.test(location.search) && (location.protocol === "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1")) {
+      document.body.appendChild(Object.assign(document.createElement("script"), { src: "tweak.js" }));
+    }
+  </script>
+</body>
+</html>
